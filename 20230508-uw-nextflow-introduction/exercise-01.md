@@ -360,3 +360,11 @@ nextflow run nextflow-io/hello -profile beartooth -c beartooth.config
 
 This will be more handy in the next section when we start to use pipelines with multiple
 profiles.
+
+## Wrapping Up
+
+You should now have a Nextflow configuration file that will work on Beartooth. With this you
+can begin to take advantage of Nextflow on Beartooth. Now it's time to start using it!
+
+Please head on over to [Exercise 2](./exercise-02.md) to start using our configuration
+file to run a few nf-core pipelines.
