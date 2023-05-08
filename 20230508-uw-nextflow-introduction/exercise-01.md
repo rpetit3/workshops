@@ -148,7 +148,7 @@ Let's try it:
 
 ```bash
 module load nextflow
-nextflow --version
+nextflow -version
 nextflow run nextflow-io/hello -c beartooth.config
 ```
 
@@ -309,7 +309,7 @@ making it into a profile. This will allow us to specify it using the `-profile` 
 is a very simple process, as we only need to wrap our configuration file with a `profile` block.
 
 ```bash
-profile {
+profiles {
     beartooth {
         // A configuration file for running Nextflow on Beartooth
         params {
