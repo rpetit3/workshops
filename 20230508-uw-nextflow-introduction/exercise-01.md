@@ -155,8 +155,23 @@ nextflow run nextflow-io/hello -c beartooth.config
 You should see the following output:
 
 ```bash
+nextflow run nextflow-io/hello -c beartooth.config
+N E X T F L O W  ~  version 22.10.4
+Launching `https://github.com/nextflow-io/hello` [goofy_fermi] DSL2 - revision: 1d71f857bb [master]
+executor >  slurm (4)
+[94/c39a03] process > sayHello (3) [100%] 4 of 4 ✔
+Hola world!
 
+Bonjour world!
+
+Ciao world!
+
+Hello world!
 ```
+
+The important part is `executor >  slurm (4)`, which tells us that Nextflow is using the SLURM
+scheduler. If you do not see this, please ask for help because otherwise the jobs are running
+on the login node, which is not good.
 
 Cool, we have a workable configuration file for Beartooth!
 
